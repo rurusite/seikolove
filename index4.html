@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=M+PLUS+Rounded+1c:wght@500&family=Train+One&display=swap');
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="icon" href="img/favicon.png">
+  <title>Funclub</title>
+</head>
+<body>
+  <div class="container0">
+  <header>
+    <a class="header-logo" href="index.html"><img src="img/seiko.png" alt="SEIKO"></a>
+  </header>
+  <main>
+	<div class="fun-visual">
+	<img src="img3/funtop.jpg" alt="トップイメージ">
+    </div> 
+	<div class="fun-top">
+	<h1>『実験現場』とは？</h1> 
+	<p>大森靖子オフィシャルファンクラブ「実験現場」は、<br>ツアーチケット先行予約はもちろん、<br>オリジナルWEBサイトの閲覧、<br>ファンクラブ会員限定イベントへの参加など、<br>大森靖子を一番身近に感じられる現場です！</p>
+    </div>
+	  
+	<h1>会員特典</h1>
+	<div class="fun-list">
+	 <ul class="fun-ul">
+       <li class="fun-li"><img src="img3/heartkira.png">オリジナル会員証「実験現場」キラキラ会員証の発行</li>
+	   <li class="fun-li"><img src="img3/heartkira.png">会員しかログインできないオリジナルWEBサイトの閲覧</li>
+	   <li class="fun-li"><img src="img3/heartkira.png">ツアー最速先行販売</li>
+	   <li class="fun-li"><img src="img3/heartkira.png">会員限定イベントへの参加</li>
+	   <li class="fun-li"><img src="img3/heartkira.png">会報発行。(年3回を予定)</li>
+	   <li class="fun-li"><img src="img3/heartkira.png">「実験現場缶バッチ」進呈</li>
+	 </ul>  
+		
+		<div class="fun-money">
+		  <p>入会費550円 年会費4,950円<br>※別途事務手数料300円<br>（全て税込価格です）</p>
+		</div>
+		
+		<div class="card-re">
+		<img class="fun-card" src="img3/funcard.png">
+		</div>
+		
+		<div class="new-re">
+		<a href="https://system.seiko-gkn.com/v2/fcJoin.aspx?ccode=OSFC&fcm=OFC"><img src="img3/new.png" alt="新規入会"></a>
+		</div>
+	</div>
+	  
+  </main> 
+	  
+	  
+	  
+ <a href="index.html"><img class="back" src="img/nana.png" alt="もどる"></a>	    
+ </div>
+  <div id="page_top"><a href="#"></a></div>
+  <script>
+    jQuery(function() {
+      var appear = false;
+      var pagetop = $('#page_top');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 120) { //120pxスクロールしたら
+          if (appear == false) {
+            appear = true;
+            pagetop.stop().animate({
+              'bottom': '16px' //下から16pxの位置に
+            }, 500); //0.5秒かけて現れる
+          }
+        } else {
+          if (appear) {
+            appear = false;
+            pagetop.stop().animate({
+              'bottom': '-80px' //下から-80pxの位置に
+            }, 500); //0.5秒かけて隠れる
+          }
+        }
+      });
+      pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+        return false;
+      });
+    });
+  </script>
+</html>

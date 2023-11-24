@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'mfn6qso',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=M+PLUS+Rounded+1c:wght@500&family=Train+One&display=swap');
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+  <link rel="icon" href="img/favicon.png">
+  <title>Aniversary</title>
+</head>
+<body>
+
+<div class="container0">
+
+  <header>
+    <a class="header-logo" href="index.html"><img src="img/seiko.png" alt="SEIKO"></a>
+  </header>
+
+<div class="main5">
+	<div class="ani-re">
+	  <img src="img3/ani10.png" alt="10周年おめでとう">
+	</div>
+	  
+	<div class="ani-ill"></div>
+
+  <div class="ani-title">
+    <h1>大森靖子 10周年<br>プレミアム輪廻ガチャ10</h1>
+  </div>
+	  
+  <div class="gacha">
+
+    <div class="gacha-a">
+      <p>2024年9月18日 大森靖子フルアルバム<br>THIS IS JAPANESE GIRL 発売</p>
+    </div>
+
+    <div class="gacha-b">
+      <p>2023年10月11日 直枝政弘編曲<br>新曲 <span class="ga">更衣室ディストピア</span> 配信</p>
+    </div>
+
+    <div class="gacha-c">
+      <p>大森靖子初の<span class="ga">小説</span>を発表</p>
+    </div>
+
+    <div class="gacha-d">
+      <p>つんく♂さんと楽曲共作</p>
+    </div>
+
+    <div class="gacha-e">
+      <p>道重さゆみさんx大森靖子 2マンライブ<br><span class="ga">ミッドナイト清純異性交友LIVE</span></p>
+    </div>
+
+    <div class="gacha-f">
+      <p>ピーズx銀杏BOYZx大森靖子 3マンライブ<br><span class="ga">Re:Re:Re:LIVE</span></p>
+    </div>
+
+    <div class="gacha-g">
+      <p>MV公募<br>大森靖子映像コンテスト</p>
+    </div>
+
+    <div class="gacha-h">
+      <p>#大森靖子と同じステージに立ちたい<br>投稿して大森靖子のライブに出よう</p>
+    </div>
+
+    <div class="gacha-i">
+      <p>アルティメット自由字架ツアー</p>
+    </div>
+
+    <div class="gacha-j">
+      <p>大森靖子楽曲総選挙ツアー</p>
+    </div>
+
+  </div>
+
+  <div class="ome">
+    <h2>改めて10周年<br>おめでとうございます</h2>
+  </div>
+
+</div>
+	
+<a href="index.html"><img class="back" src="img/nana.png" alt="もどる"></a>
+
+</div>	
+
+  <div id="page_top"><a href="#"></a></div>
+  <script>
+    jQuery(function() {
+      var appear = false;
+      var pagetop = $('#page_top');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 120) { //120pxスクロールしたら
+          if (appear == false) {
+            appear = true;
+            pagetop.stop().animate({
+              'bottom': '16px' //下から16pxの位置に
+            }, 500); //0.5秒かけて現れる
+          }
+        } else {
+          if (appear) {
+            appear = false;
+            pagetop.stop().animate({
+              'bottom': '-80px' //下から-80pxの位置に
+            }, 500); //0.5秒かけて隠れる
+          }
+        }
+      });
+      pagetop.click(function () {
+        $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
